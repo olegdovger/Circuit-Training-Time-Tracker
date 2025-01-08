@@ -1,0 +1,131 @@
+:root {
+  --lightness-end: 40%;
+  --lightness-start: 15%;
+  --lightness-delta: calc((var(--lightness-end) - var(--lightness-start)) / 5);
+
+  --hue: 150;
+  --saturation: 55%;
+
+  --cell-color-1: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--lightness-start) + var(--lightness-delta) * 5)
+  );
+  --cell-color-2: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--lightness-start) + var(--lightness-delta) * 4)
+  );
+  --cell-color-3: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--lightness-start) + var(--lightness-delta) * 3)
+  );
+  --cell-color-4: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--lightness-start) + var(--lightness-delta) * 2)
+  );
+  --cell-color-5: hsl(
+    var(--hue),
+    var(--saturation),
+    calc(var(--lightness-start) + var(--lightness-delta) * 1)
+  );
+  color: hsl(120, 15%, 35%);
+}
+.PresetPreviewListV2 {
+  display: flex;
+  flex-direction: column;
+  /*gap: 0rem;*/
+}
+
+.PresetPreviewV2Wrapper {
+  position: relative;
+}
+
+.PresetPreviewV2 {
+  width: 100%;
+  height: 8rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: relative;
+
+  z-index: 9;
+}
+
+.SetCellV2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  font-family: Roboto, serif;
+  font-weight: 300;
+
+  white-space: nowrap;
+
+  padding: 0 1rem;
+  margin: 0 -1rem;
+}
+
+.SetCellV2:not(:first-child):not(:last-child) {
+  clip-path: polygon(2rem 0, 100% 0, calc(100% - 2rem) 100%, 0 100%);
+}
+
+.CellSetCountV2, .SetCellV2:nth-child(1) {
+  color: #ffffff;
+  background: var(--cell-color-1);
+}
+
+.CellExerciseCountV2, .SetCellV2:nth-child(2) {
+  color: #ffffff;
+  background: var(--cell-color-2);
+
+  z-index: 4;
+}
+
+.CellExerciseTimeSecondsV2, .SetCellV2:nth-child(3) {
+  color: #ffffff;
+  background: var(--cell-color-3);
+
+  z-index: 3;
+}
+
+.CellExerciseRelaxSecondsV2, .SetCellV2:nth-child(4) {
+  color: #ffffff;
+  background: var(--cell-color-4);
+
+  z-index: 2;
+}
+
+.CellSetRelaxSecondsV2, .SetCellV2:nth-child(5) {
+  color: #ffffff;
+  background: var(--cell-color-5);
+
+  z-index: 1;
+}
+
+.LeftPadding {
+  padding-left: 0.5rem;
+}
+.RightPadding {
+  padding-right: 0.5rem;
+}
+
+.HorizontalShadow {
+  /*padding: 0;*/
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  box-shadow: 0 0 1rem black;
+  z-index: 9;
+
+  bottom: -1px;
+  position: absolute;
+}
