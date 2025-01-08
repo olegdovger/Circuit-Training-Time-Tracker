@@ -22,7 +22,7 @@ jobs:
         run: deno run -A ./build.ts # Your build script
 
       - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v2
+        uses: denoland/deployctl@v1
         with:
           project: "Circuit-Training-Time-Tracker" # Your deploy project name
           entrypoint: "server.js"
