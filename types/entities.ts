@@ -1,23 +1,22 @@
 export interface Preset {
-  id: number;
   /**
    * @description Количество подходов
    */
-  setCount: number;
+  approaches: number;
   /**
    * @description Количество упражнений
    */
-  exerciseCount: number;
+  exercises: number;
   /**
    * @description Длительность упражнения в секундах
    */
-  exerciseTimeSeconds: number;
+  exerciseDuration: number;
   /**
    * @description Количество секунд между упражнениями
    */
-  exerciseRelaxSeconds: number;
+  exercisePauseDuration: number;
   /**
    * @description Количество секунд между подходами
    */
-  setRelaxSeconds: number;
+  approachPauseDuration: number;
 }

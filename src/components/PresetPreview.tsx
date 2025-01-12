@@ -2,28 +2,31 @@ import type { FC } from "react";
 
 import { Preset } from "../../types/entities.ts";
 
-interface PresetPreviewProps {
+interface PresetPreviewV2Props {
   preset: Preset;
 }
 
-const PresetPreview: FC<PresetPreviewProps> = ({ preset }) => {
+const PresetPreview: FC<PresetPreviewV2Props> = ({ preset }) => {
   return (
-    <div className="PresetPreview">
-      <span className="SetCell CellSetCount">{preset.setCount}</span>
-      <span className="Separator"></span>
-      <span className="SetCell CellExerciseCount">{preset.exerciseCount}</span>
-      <span className="Separator"></span>
-      <span className="SetCell CellExerciseTimeSeconds">
-        {preset.exerciseTimeSeconds}
-      </span>
-      <span className="Separator"></span>
-      <span className="SetCell CellExerciseRelaxSeconds">
-        {preset.exerciseRelaxSeconds}
-      </span>
-      <span className="Separator"></span>
-      <span className="SetCell CellSetRelaxSeconds">
-        {preset.setRelaxSeconds}
-      </span>
+    <div className="PresetPreviewV2Wrapper">
+      <div className="PresetPreviewV2" tabIndex={preset.id}>
+        <span className="SetCellV2 CellSetCountV2 LeftPadding">
+          {preset.setCount}
+        </span>
+        <span className="SetCellV2 CellExerciseCountV2">
+          {preset.exerciseCount}
+        </span>
+        <span className="SetCellV2 CellExerciseTimeSecondsV2">
+          {preset.exerciseTimeSeconds}
+        </span>
+        <span className="SetCellV2 CellExerciseRelaxSecondsV2">
+          {preset.exerciseRelaxSeconds}
+        </span>
+        <span className="SetCellV2 CellSetRelaxSecondsV2 RightPadding">
+          {preset.setRelaxSeconds}
+        </span>
+      </div>
+      <hr className="HorizontalShadow" />
     </div>
   );
 };

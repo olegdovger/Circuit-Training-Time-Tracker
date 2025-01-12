@@ -1,19 +1,18 @@
 import type { FC } from "react";
+import Icon from "./Icon.tsx";
 
-const PresetPreview: FC = () => {
+const PresetPreviewV2: FC = () => {
   return (
-    <div className="PresetPreview">
-      <span className="SetCell">?</span>
-      <span className="Separator"></span>
-      <span className="SetCell">?</span>
-      <span className="Separator"></span>
-      <span className="SetCell">?</span>
-      <span className="Separator"></span>
-      <span className="SetCell">?</span>
-      <span className="Separator"></span>
-      <span className="SetCell">?</span>
+    <div className="PresetPreviewV2" tabIndex={0} onKeyPress={() => alert(1)}>
+      <span className="SetCellV2" />
+      <span className="SetCellV2" />
+      <span className="SetCellV2">
+        <Icon name="add" />
+      </span>
+      <span className="SetCellV2" />
+      <span className="SetCellV2" />
     </div>
   );
 };
 
-export default PresetPreview;
+export default PresetPreviewV2;
