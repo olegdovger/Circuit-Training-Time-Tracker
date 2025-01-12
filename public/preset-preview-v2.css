@@ -41,6 +41,7 @@
 
 .PresetPreviewV2Wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 .PresetPreviewV2 {
@@ -54,6 +55,14 @@
   position: relative;
 
   z-index: 9;
+}
+
+.PresetPreviewV2:hover {
+  --saturation: 20%;
+}
+.PresetPreviewV2:focus {
+  --saturation: 75%;
+  outline: none;
 }
 
 .SetCellV2 {
@@ -79,33 +88,53 @@
 
 .CellSetCountV2, .SetCellV2:nth-child(1) {
   color: #ffffff;
-  background: var(--cell-color-1);
+  background-color: hsl(
+          var(--hue),
+          var(--saturation),
+          calc(var(--lightness-start) + var(--lightness-delta) * 5)
+  );
 }
 
 .CellExerciseCountV2, .SetCellV2:nth-child(2) {
   color: #ffffff;
-  background: var(--cell-color-2);
+  background-color: hsl(
+          var(--hue),
+          var(--saturation),
+          calc(var(--lightness-start) + var(--lightness-delta) * 4)
+  );
 
   z-index: 4;
 }
 
 .CellExerciseTimeSecondsV2, .SetCellV2:nth-child(3) {
   color: #ffffff;
-  background: var(--cell-color-3);
+  background-color: hsl(
+          var(--hue),
+          var(--saturation),
+          calc(var(--lightness-start) + var(--lightness-delta) * 3)
+  );
 
   z-index: 3;
 }
 
 .CellExerciseRelaxSecondsV2, .SetCellV2:nth-child(4) {
   color: #ffffff;
-  background: var(--cell-color-4);
+  background-color: hsl(
+          var(--hue),
+          var(--saturation),
+          calc(var(--lightness-start) + var(--lightness-delta) * 2)
+  );
 
   z-index: 2;
 }
 
 .CellSetRelaxSecondsV2, .SetCellV2:nth-child(5) {
   color: #ffffff;
-  background: var(--cell-color-5);
+  background-color: hsl(
+          var(--hue),
+          var(--saturation),
+          calc(var(--lightness-start) + var(--lightness-delta) * 1)
+  );
 
   z-index: 1;
 }

@@ -1,10 +1,21 @@
 {
   "version": "4",
+  "specifiers": {
+    "npm:classnames@2.5.1": "2.5.1"
+  },
+  "npm": {
+    "classnames@2.5.1": {
+      "integrity": "sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow=="
+    }
+  },
   "redirects": {
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
     "https://esm.sh/v128/@types/react@~18.2/jsx-dev-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-dev-runtime~.d.ts",
     "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts",
-    "https://esm.sh/v135/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.25/client~.d.ts"
+    "https://esm.sh/v135/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.25/client~.d.ts",
+    "https://esm.sh/v135/@types/react-dom@~18.2/index.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.25/index.d.ts",
+    "https://esm.sh/v135/@types/react-dom@~18.2/server~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.25/server~.d.ts",
+    "https://esm.sh/v135/@types/wouter@~2/X-ZS9yZWFjdA/static-location~.d.ts": "https://esm.sh/v135/@types/wouter@2.2.0/X-ZS9yZWFjdA/static-location~.d.ts"
   },
   "remote": {
     "https://deno.land/std@0.176.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
@@ -287,6 +298,7 @@
     "https://deno.land/x/wait@0.1.12/log_symbols.ts": "cdf2d0aa44754d10fddd55999e933886a4d753f2acfc1219f629427ccc776ac7",
     "https://deno.land/x/wait@0.1.12/mod.ts": "83211441439cd0f794f4e95fbb6c766929dd6886169100d3bdf2ea1ea5e3adfe",
     "https://deno.land/x/wait@0.1.12/spinners.ts": "289346d54f8d6152a5dcd67b67e47784cf9b7a8a8f6f0b6dc041ebc2ef6bb76c",
+    "https://esm.sh/react-dom@18.2.0": "0f6e9183d72c65d9873a8eae2c6c872df9b85cde317dbc0ca3d7447bab8e4ec3",
     "https://esm.sh/react-dom@18.2.0/client?dev": "db999f07a124aff540506201816a27f2a5992f70a90b3ee3fb53a4dd9168c240",
     "https://esm.sh/react-dom@18.2.0/server?dev": "aea21208060e024c577df956f9b7edfdb97133d6b4634449ec27b1bf014e6876",
     "https://esm.sh/react-helmet-async@1.3.0?external=react": "960c7d088be0e208ebcb41b30bcfdfc5dc01bb7dcf8fde355a703e12eba2b555",
@@ -312,11 +324,14 @@
     "https://esm.sh/v135/prop-types@15.8.1/X-ZS9yZWFjdA/denonext/prop-types.mjs": "c4ce53e88327d3911a960c3f34e76f114fce31a9e45139427a0df4fad24c1bd5",
     "https://esm.sh/v135/react-dom@18.2.0/denonext/client.development.js": "6f99a06ab2651c134cac5bd21d64afb72a5ec80cdc7cb2e6c9f5879fd0d8993b",
     "https://esm.sh/v135/react-dom@18.2.0/denonext/react-dom.development.mjs": "189d3ccd62537658f1a7f509b679fa4ef4daddf0979c231d25a4297b22efbf75",
+    "https://esm.sh/v135/react-dom@18.2.0/denonext/react-dom.mjs": "8191fc377ea7083cca5640699c4abd75de033089eb932799e29aa04bb136838f",
     "https://esm.sh/v135/react-dom@18.2.0/denonext/server.development.js": "de33856e8ba0e5c1c4a65b9fa9199cd5ba1bb67e5edcd8d4bdad39a3eb89f548",
     "https://esm.sh/v135/react-fast-compare@3.2.2/X-ZS9yZWFjdA/denonext/react-fast-compare.mjs": "a209b1b9f140bab2f35e4d4e97ccdde0c9ab8de6f61a55186748aec7a2b8f68c",
     "https://esm.sh/v135/react-fast-compare@3.2.2/denonext/react-fast-compare.mjs": "a209b1b9f140bab2f35e4d4e97ccdde0c9ab8de6f61a55186748aec7a2b8f68c",
     "https://esm.sh/v135/react-helmet-async@1.3.0/X-ZS9yZWFjdA/denonext/react-helmet-async.mjs": "e71ac16c3526d3d07eaf828651e0920df1f447c00991109787cc772ccfb21339",
     "https://esm.sh/v135/scheduler@0.23.0/denonext/scheduler.development.mjs": "b6c8f513ecc4afb69b0c5c78a7674bb1c78f7e003946c6c8c655778d81d775db",
+    "https://esm.sh/v135/scheduler@0.23.0/denonext/scheduler.mjs": "cdbc6d2823e2c6fffcb14501146ff2602a38c48d3c9dd9268f308e833ede2b49",
+    "https://esm.sh/v135/scheduler@0.23.2/denonext/scheduler.mjs": "dc96e5be52b14a40ce36295d938d5211e520c4da3183fe2ad4283ed103747d82",
     "https://esm.sh/v135/shallowequal@1.1.0/X-ZS9yZWFjdA/denonext/shallowequal.mjs": "3a621141e773a2b5504d531378148a7cb8c202bf4ee64cb2a80f887b9932e735",
     "https://esm.sh/v135/shallowequal@1.1.0/denonext/shallowequal.mjs": "3a621141e773a2b5504d531378148a7cb8c202bf4ee64cb2a80f887b9932e735",
     "https://esm.sh/v135/wouter@2.9.2/X-ZS9yZWFjdA/denonext/matcher.js": "d6a001ce7decd03998cd39efcf2c2225351d6d150d3b0584d443d1016e0c2523",
