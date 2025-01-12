@@ -4,7 +4,7 @@
 }
 
 .Items {
-    padding: 2rem;
+    padding: 0 2rem;
     width: 80%;
 
     display: grid;
